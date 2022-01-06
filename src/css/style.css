@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1,
+p {
+    color: white;
+    margin: 0 20px 40px 20px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#spectrogram-canvas {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 300px);
+    margin-top: 40px;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+#record {
+    margin-right: 20px;
+}
+
+button>img {
+    width: 20px;
+}

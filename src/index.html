@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="speak">Speak</button>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-        <script src="/script.js"></script>
-    </body>
+<head>
+    <title>Home | Oscillator studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="icon" href="./images/logo.png" />
+</head>
+
+<body>
+    <h1>Welcome to Oscillator studio!</h1>
+
+    <p>Hold the record button (the one with the microphone) to record your spectrogram, and then you can synthesize (by
+        pressing the speaker button) that spectrogram with oscillators available within the Web Audio API.</p>
+
+    <canvas id="spectrogram-canvas"></canvas>
+
+    <div class="button-container">
+        <button id="record" title="Record">
+            <img src="./images/mic.png" />
+        </button>
+        <button id="synthesize" title="Synthesize">
+            <img src="./images/speaker.png" />
+        </button>
+    </div>
+
+    <script src="./scripts/p5.js"></script>
+    <script src="./scripts/p5.dom.min.js"></script>
+    <script src="./scripts/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
 </html>
